@@ -1,0 +1,53 @@
+/*
+// @copyright: https://alandette.com
+// @author: Edwin González Alandete
+// @description: Fully responsive, built on HTML5 + SASS + CSS3, customizable and 100% free 
+// @package: https://github.com/alandete 
+// @date: 18/04/2022
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $FontBase;
+  font-size: $FontSize;
+  font-weight: $FontWight;
+  color: $FontColor;
+  background-color: $bkgColor;
+  line-height: 150%;
+}
+
+/* Encabezados
+************************************/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $FontHeadings;
+  color: $FontColor;
+  font-weight: 600;
+}
+
+/* Botón Go To Top
+************************************/
+#gototop {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  line-height: 0%;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-radius: 10%;
+  padding: .5rem;
+  background-color: $BrandColor-primary;
+  color: #fff;
+}
+
