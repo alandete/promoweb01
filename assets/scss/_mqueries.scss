@@ -2,7 +2,57 @@
 @media (min-width: 768px) {}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+  /* ****************************** Hero */
+  #hero {
+    height: 100%;
+
+    .flxboxes {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .caption {
+        width: 45%;
+
+        h1 {
+          margin: 0 0 1.5rem 0;
+        }
+      }
+
+      .media {
+        width: 55%;
+        margin: 0;
+        padding: 1rem;
+      }
+
+    }
+  }
+
+}
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+  /* ****************************** Hero */
+  #hero {
+    height: 100vh;
+
+    .flxboxes {
+      height: 100%;
+
+      .caption {
+        width: 40%;
+      }
+
+      .media {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+  }
+
+}

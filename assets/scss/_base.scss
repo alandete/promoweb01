@@ -35,6 +35,16 @@ h5 {
   font-weight: 600;
 }
 
+/* Flexbox layout
+************************************/
+.flxboxes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+
 /* Botón Go To Top
 ************************************/
 #gototop {

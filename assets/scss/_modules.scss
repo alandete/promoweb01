@@ -1,0 +1,27 @@
+/* Hero Styles & layout
+************************************/
+#hero {
+  padding: 6rem 0 1rem 0;
+  background-color: $BrandColor-primary;
+  color: #fff;
+
+  .flxboxes {
+    flex-direction: column-reverse;
+
+    .caption {
+      h1 {
+        color: #fff !important;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .media {
+      margin-bottom: 3rem;
+
+      .fancyblob {
+        @include fancyblob($Gray100, $BrandColor-secondary, $Gray100);
+      }
+    }
+
+  }
+}

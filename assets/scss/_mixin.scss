@@ -1,0 +1,53 @@
+// Mixin para generar los fancy blobs en la imagen de la sección Hero
+@mixin fancyblob($bkgColor1, $bkgColor2, $brdColor1) {
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //--fancy-border-prod: 49% 51% 78% 22% / 42% 68% 32% 58%;
+  --fancy-border-prod: 82% 18% 54% 46% / 79% 71% 29% 21%;
+
+  span:nth-child(1) {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgba($bkgColor1, .93);
+    border-radius: var(--fancy-border-prod);
+    transform: rotate(10deg);
+    z-index: 700;
+  }
+
+  span:nth-child(2) {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgba($bkgColor2, .95);
+    border-radius: var(--fancy-border-prod);
+    transform: rotate(0deg);
+    z-index: 800;
+  }
+
+  span:nth-child(3) {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $brdColor1;
+    border-radius: var(--fancy-border-prod);
+    transform: rotate(-5deg);
+    z-index: 900;
+  }
+
+  img {
+    max-width: 80%;
+    z-index: 1000;
+  }
+}
