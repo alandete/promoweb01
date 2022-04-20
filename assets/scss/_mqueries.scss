@@ -1,58 +1,82 @@
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+  // Hero Styles & layout
+  #hero {
+
+    >div {
+
+      .flxboxes {
+
+        .media {
+          .fancyblob {
+            max-width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 
-  /* ****************************** Hero */
+
+
+
+
+
+  // Hero Styles & layout
   #hero {
-    height: 100%;
+    padding: 1rem 0;
 
-    .flxboxes {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+    >div {
+      height: 100vh;
 
-      .caption {
-        width: 45%;
+      .flxboxes {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
 
-        h1 {
-          margin: 0 0 1.5rem 0;
+        .caption {
+          width: 40%;
+
+          h1 {
+            color: #fff !important;
+            margin: 0 0 1rem;
+          }
         }
-      }
 
-      .media {
-        width: 55%;
-        margin: 0;
-        padding: 1rem;
-      }
+        .media {
+          width: 50%;
 
+          .fancyblob {
+            max-width: 95%;
+            margin: 0;
+          }
+        }
+
+
+
+
+      }
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
-  /* ****************************** Hero */
-  #hero {
-    height: 100vh;
-
-    .flxboxes {
-      height: 100%;
-
-      .caption {
-        width: 40%;
-      }
-
-      .media {
-        width: 50%;
-        margin: 0;
-        padding: 0;
-      }
-
-    }
-  }
-
-}
+@media (min-width: 1200px) {}

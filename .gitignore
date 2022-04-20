@@ -208,5 +208,6 @@ $RECYCLE.BIN/
 
 ### Custom path ###
 devroadmap.md
+assets/img
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows,git,node,sass

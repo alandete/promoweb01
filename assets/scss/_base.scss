@@ -37,11 +37,8 @@ h5 {
 
 /* Flexbox layout
 ************************************/
-.flxboxes{
+.flxboxes {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:flex-start;
 }
 
 
@@ -61,3 +58,6 @@ h5 {
   color: #fff;
 }
 
+.fancyblob {
+  @include fancyblob($BrandColor-secondary, $BrandColor-tertiary, $Gray100);
+}
