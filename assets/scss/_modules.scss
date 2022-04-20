@@ -19,11 +19,35 @@
       }
 
       .media {
-        .fancyblob{
+        .fancyblob {
           max-width: 90%;
           margin: 0 auto 2rem;
         }
       }
+    }
+  }
+}
+
+// Features
+#features {
+  background-color: $Gray100;
+  color: $Gray300;
+  padding: .5rem 0;
+
+  .ctnbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem 0;
+
+    .las {
+      font-size: 3rem !important;
+      margin-right: .7rem;
+    }
+
+    p {
+      margin: 0;
     }
   }
 }
